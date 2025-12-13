@@ -247,7 +247,7 @@ input::placeholder,textarea::placeholder{
   transform: scale(1.1);
   cursor: pointer;
 }
-#p{
+# p{
     margin:5px;
     font-size: 14px important; 
     gap: 10px;
