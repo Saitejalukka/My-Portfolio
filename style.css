@@ -8,7 +8,7 @@
 }
 body{
     height:100vh;
-    font-size:38px;
+    font-size:18px;
 }
 header{
     display: flex;
@@ -43,7 +43,7 @@ li>img{
 /* header ends */
 /* banner starts */
 main{
-    font-size: 59px;
+    font-size: 25px;
     margin: 10px;
 }
 section{
@@ -159,31 +159,28 @@ nav ul{
     height:600px;
     justify-content: end;
 }
-#projects{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    font-size: medium;
-    gap: 20px;
-  }
-  .project{
+ #projects{
     border-radius: 20px;
     box-shadow: 10px 10px 20px var(--primary-color);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     padding: 20px;
     gap: 10px;
   }
-  .project>button{
+  #projects>button{
     padding: 10px 20px;
     background-color: black;
     color: white;
   }
-
-.project>img{
-    width: 350px;
-}
-.project:hover{
+  #projects>img{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ .projects:hover{
     transform: scale(1.05);
  }
 #contact{
@@ -246,11 +243,6 @@ input::placeholder,textarea::placeholder{
   transform: scale(1.1);
   cursor: pointer;
 }
-# projects{
-    margin:5px;
-    font-size: 14px important; 
-    gap: 10px;
-}
 footer{
     text-align: center;
     font-size: 24px;
@@ -297,10 +289,6 @@ li a{
     padding: 10px 20px;
     font-size: 16px;
 }
-#projects{
-    display: flex;
-    grid-template-columns: repeat(2,1fr);
-}
 }
 }
 }
@@ -329,4 +317,7 @@ li a{
   background-color: #005eff !important;  
   color: white !important;
   cursor: pointer;
+}
+#projects{
+    grid-template-columns: repeat(2,1fr);
 }
